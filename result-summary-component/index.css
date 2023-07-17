@@ -1,6 +1,8 @@
-@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
-
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 .left {  
     background-color: hsl(241, 81%, 54%);
