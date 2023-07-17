@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js"></script>
+  <link href="./index.css" type="text/css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { 
+        extend: {
+          colors: {
+            whiteHsl: 'hsl(0, 0%, 100%)',
+            paleBlue: 'hsl(221, 100%, 96%)', 
+            lightLavender: 'hsl(241, 100%, 89%)',
+            darkBlue: 'hsl(224, 30%, 27%)',
+            slateBlue: 'hsl(252, 100%, 67%)',
+            lightRed: 'hsl(0, 100%, 67%)',
+            orangeYellow: 'hsl(39, 100%, 56%)',
+            greenTeal: 'hsl(166, 100%, 37%)',
+            cobaltBlue: 'hsl(234, 85%, 45%)'
+          }
+        } 
+      }
+    }
+  </script>
+</head>
+<body>
+ 
+  <div class="sm:h-screen grid md:place-content-center w-screen bg-whiteHsl">
+    <div class="shadoww flex justify-evenly flex-col md:flex-row bg-white w-screen md:w-[750px] h-[500px] rounded-[30px]  ">
+      <div class="w-full pt-[380px] md:pt-0 flex gradient items-center  justify-evenly  flex-col md:w-[45%] py-10 px-14 left rounded-[30px]">
+        <h2 class="text-lightLavender text-lg  font-[600]">Your Result</h2>
+        <div class="rounded-full gradient2 w-[170px] flex items-center justify-center flex-col h-[170px]">
+          <h1 class="text-white text-5xl font-bold">76</h1>
+          <h4 class="text-sm text-lightLavender mt-3">of 100</h4>
+        </div>
+        <h1 class="text-whiteHsl text-2xl font-bold">Great</h1>
+        <p class="text-center px-4 w-[300px] md:w-[250px] text-lightLavender">
+          You scored higher than 65% of the people
+          who have taken these tests.
+        </p>
+      </div>
+      <div class="w-full md:w-[55%] right pb-10 rounded-tr-[30px] rounded-br-[30px] px-10 space-y-7 mt-7">
+        <h1 class="text-xl font-700 text-cobalBlue md:font-bold">Summary</h1>
+        <div class="flex flex-col gap-5 score-container"> 
+        </div>
+        <button class="w-full rounded-full bg-darkBlue text-whiteHsl text-lg font-700 py-5 md:py-3 cursor-pointer continue-btn">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

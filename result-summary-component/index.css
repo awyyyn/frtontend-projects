@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+
+
+
+.left {  
+    background-color: hsl(241, 81%, 54%);
+}
+ 
+
+.gradient {
+    background-image: 
+        linear-gradient(  
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%)
+            /* hsla(241, 72%, 46%, 0),
+            hsla(256, 72%, 46%, 1) */
+        )
+    ;
+}
+
+.gradient2 {
+    background-image: 
+        linear-gradient( 
+            hsla(256, 72%, 46%, 1),
+            hsla(241, 72%, 46%, 0)
+        )
+    ;
+}
+
+.continue-btn:hover {
+    background-image: 
+        linear-gradient( 
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%)
+        )
+    ;
+}
+
+.score { 
+    padding-block: 15px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding-inline: 20px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.shadoww {
+    box-shadow: 5px 10px 20px hsla(234, 85%, 45%, 0.097);
+}
+
+.light__blue {
+    background-image: hsl(252, 100%, 67%);
+}
+
+.royal__blue {
+    background-image: hsl(241, 81%, 54%);
+}
+
+.violet__blue {
+    background-image: radial-gradient(hsla(256, 72%, 46%, 1));
+}
+
+.persian__blue {
+    background-image: radial-gradient(hsla(241, 72%, 46%, 0));
+}
