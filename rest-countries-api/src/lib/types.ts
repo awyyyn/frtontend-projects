@@ -10,12 +10,7 @@ interface flags {
     png: string
     alt: string
 }
-
-interface currencies {
-    code: string
-    name: string
-    symbol: string
-}
+ 
  
 interface translation {
     common: string

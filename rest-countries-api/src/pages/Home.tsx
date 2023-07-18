@@ -2,7 +2,7 @@ import { Listbox, Transition } from "@headlessui/react";
 import { Card, LoadingCard } from "../components"
 import { countryType } from "../lib/types";
 import Layout from "./layout";
-import { Fragment, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { filter } from "../constant";
 import { Link } from "react-router-dom";
 
