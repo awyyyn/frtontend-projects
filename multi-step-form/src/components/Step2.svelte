@@ -1,6 +1,6 @@
-<script lang="ts">
-    import { plan, monthlyOrYearly, planErr } from '../stores/index.js'
-    import { billing } from '../lib/data.js' 
+<script>
+    import { plan, monthlyOrYearly, planErr } from '../stores/index.ts'
+    import { billing } from '../lib/data.ts' 
 </script>
 
 <div class="sm:w-[445px] ">

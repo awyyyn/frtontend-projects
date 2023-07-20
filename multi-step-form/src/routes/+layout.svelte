@@ -100,7 +100,7 @@
                     {/if}
 
                     <button on:click={handleNextorSubmit} class=" text-alabaster rounded-lg px-6 {isStep4 ? 'bg-purplish' : 'bg-marine'} py-2">
-                        {isStep4 ? 'Confirm' : 'Next'}
+                        {isStep4 ? 'Confirm' : 'Next Step'}
                     </button>
                 </div>
             {/if}

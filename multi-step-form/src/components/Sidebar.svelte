@@ -2,7 +2,7 @@
 <script>
     import sidebar from '../assets/bg-sidebar-desktop.svg'
     import sidebarMobile from '../assets/bg-sidebar-mobile.svg'
-    import { steps } from '../stores/index';
+    import { steps } from '../stores/index.ts';
 
     $:  step1 = $steps === 1 ? 'active__number' : 'inactive__number';
     $:  step2 = $steps === 2 ? 'active__number' : 'inactive__number';

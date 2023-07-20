@@ -1,6 +1,6 @@
 <script lang="ts">
     import { fly } from 'svelte/transition'
-    import { email, phone, name, nameErr, emailErr, phoneErr } from '../stores/index.js' 
+    import { email, phone, name, nameErr, emailErr, phoneErr } from '../stores/index.ts' 
  
   
 </script>
