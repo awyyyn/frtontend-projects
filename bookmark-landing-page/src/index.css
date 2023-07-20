@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .link {
+        @apply uppercase text-dark-blue hover:text-soft-red
+    }
+
+    .feature__btn{
+        @apply text-grayish-blue text-center font-bold flex justify-center relative py-5 border-t border-b text-lg border-grayish-blue mx-12
+        sm:w-[100%] sm:border-t-0 sm:mx-0 hover:text-soft-red
+    }
+
+    .btn__active {  
+        @apply absolute w-[50%] bottom-0   h-[4px] bg-soft-red sm:w-full
+    }
+}
