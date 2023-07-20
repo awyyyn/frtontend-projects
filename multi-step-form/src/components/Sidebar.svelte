@@ -1,8 +1,6 @@
 
-<script>
-    import sidebar from '../assets/bg-sidebar-desktop.svg'
-    import sidebarMobile from '../assets/bg-sidebar-mobile.svg'
-    import { steps } from '../stores/index.ts';
+<script> 
+    import { steps } from '../stores/index.ts'; 
 
     $:  step1 = $steps === 1 ? 'active__number' : 'inactive__number';
     $:  step2 = $steps === 2 ? 'active__number' : 'inactive__number';
@@ -11,7 +9,7 @@
     
 </script>
 
-<div class="sidebar bg-mobile sm:bg-desktop">
+<div class="sidebar  bg-[url('assets/bg-sidebar-mobile.svg')] sm:bg-[url('assets/bg-sidebar-desktop.svg')]">
     <!-- <img alt="sidebar" class="absolute sm:block hidden object-cover" src={sidebar } />
     <img alt="sidebar" class="sm:hidden absolute w-full " src={sidebarMobile} /> -->
     <div class="number__container">

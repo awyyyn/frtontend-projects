@@ -15,4 +15,4 @@ export interface billing {
     monthly: number
     yearly: number 
     id: string
-}
+}   
