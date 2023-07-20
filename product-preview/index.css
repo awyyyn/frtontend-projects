@@ -130,9 +130,8 @@
     }
     .left {
         width: 50%; 
-        height: 100%;
-        object-fit: contain;
-        background-size: contain; 
+        height: 100%; 
+        background-size: cover; 
         background-image: url('./images/image-product-desktop.jpg');
     }
 }
