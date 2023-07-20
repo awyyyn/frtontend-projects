@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .form-group {
+        @apply flex flex-col my-2 md:my-5
+    } 
+    .form-label {
+        @apply text-marine
+    }
+
+    .form-input {
+        @apply 
+            border-coolGray 
+            border 
+            rounded-[5px] 
+            px-4 py-2 
+            font-normal
+            focus:outline-none  
+            focus:border-purplish
+    }
+
+    .number__container {
+        @apply  
+            flex justify-center 
+            mt-10 xs:mt-16 md:mt-6
+            gap-x-5
+            sm:flex-col
+            sm:items-start
+    }
+
+    .number, .active__number {
+        @apply   
+            rounded-full 
+            border 
+            text-magnolia
+            h-[31px] 
+            w-8 flex 
+            items-center 
+            justify-center 
+            font-bold
+    }
+
+    .inactive__number {
+        @apply
+            text-magnolia 
+            border-magnolia 
+    }
+
+    .active__number {
+        @apply bg-magnolia text-marine
+    }
+
+    .sidebar{
+        @apply 
+            sm:h-full w-screen 
+            z-[2] h-[200px] 
+            bg-contain 
+            xs:bg-cover 
+            sm:w-[178px] 
+            md:w-[226px] 
+            relative 
+            rounded-lg
+            bg-no-repeat
+    }
+    .step {
+        @apply 
+            hidden
+            sm:flex flex-col
+            -space-y-1
+    }
+    .step > span {
+        @apply text-magnolia font-thin text-sm
+    }
+    .step > h2 {
+        @apply uppercase text-white font-bold text-[13px] tracking-wide
+    }
+    .billing {
+        @apply  
+            px-4 py-4
+            rounded-lg
+            border
+            my-2 flex gap-x-4
+            sm:flex-col flex-row
+            sm:justify-between
+            sm:h-[180px] sm:w-[140px] 
+        ;
+    }
+    .active__bill {
+        @apply border-purplish
+    }
+    .inactive__bill {
+        @apply 
+            border-coolGray 
+        ;
+    }
+
+    .samp {
+        @apply bg-red-700
+    }
+}
+ 
