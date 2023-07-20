@@ -101,6 +101,8 @@
     background-color: none;
     border: none;
     border-radius: 10px;
+    align-items: center;
+    font-family: var(--primary-font);
 }
 
 .cta > span {
