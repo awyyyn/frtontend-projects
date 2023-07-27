@@ -14,9 +14,7 @@ export const Theme = createContext<initialType>({
 const Context = ({ children }: children) => {
 
     const [theme, setTheme] = useState(false) 
-    
-    
-
+      
 
     return (
         <Theme.Provider value={{theme, setTheme}}>
