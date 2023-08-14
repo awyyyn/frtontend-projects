@@ -4,3 +4,4 @@
 - [Product Preview](https://product-preview-izcj.onrender.com/)
 - [Rest Countries](https://rest-countries-api-pi-rouge.vercel.app/)
 - [Result Summary Component](https://result-summary-component-qs7t.onrender.com)
+- [Interactive Card Details](https://fm-1.vercel.app)
