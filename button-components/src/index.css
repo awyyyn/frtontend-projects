@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer components {
+    .links {
+        @apply font-japanese text-[14px] leading-normal
+    }
+    .inactive-link {
+        @apply text-[#9E9E9E] font-medium 
+    }
+    .active-link {
+        @apply text-[#090F31] font-normal
+    } 
+    .brand {
+        @apply font-poppins text-[13px] not-italic leading-normal font-semibold text-[#090F31]
+    }
+    .title {
+        @apply font-poppins text-[24px] not-italic font-medium leading-normal
+    }
+    .btn {
+        @apply rounded-[6px] shrink-0 text-[14px] not-italic font-medium leading-normal font-japanese text-center  
+    }
+    .label {
+        @apply text-xs font-normal font-ubuntu text-gray-1 block
+    }
+    .btn-container {
+        @apply space-y-[12px] min-w-max
+    }  
+    .row-container {
+        @apply grid grid-cols-1 sm:grid-cols-3 auto-rows-auto md:grid-cols-4 gap-y-[40px] auto-cols-min  gap-x-[155px]
+    }
+    .disabled {
+        @apply disabled:bg-default disabled:text-gray-3 disabled:shadow-none disabled:cursor-not-allowed disabled:outline-none
+    }
+    .text-disabled {
+        @apply disabled:cursor-not-allowed  disabled:text-gray-3 
+    }  
+
+    .default {
+        @apply bg-default text-gray-1
+    }
+    .btn-sm {
+        @apply px-3 py-[6px]
+    }
+    .btn-md { 
+        @apply px-4 py-2
+    }
+    .btn-lg { 
+        @apply px-[22px] py-[11px]
+    }
+ 
+}
+
