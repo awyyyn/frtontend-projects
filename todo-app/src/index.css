@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .nav__button {
+    @apply relative min-w-[81px]  z-30 text-[#333] py-[19px] text-[14px] leading-normal font-semibold  
+  }
+  .nav {
+    @apply  max-w-[608px] min-w-[608px] mx-auto  flex justify-evenly mt-[58px] border-b  border-[#BDBDBD];
+  }
+
+  .bottom__underline::before {
+    @apply h-[4px] min-w-[89px] bg-[#2F80ED] rounded-t-[4px] absolute left-[50%] -translate-x-[50%]  z-50 content-[""] bottom-0
+  }
+}
