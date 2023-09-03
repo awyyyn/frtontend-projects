@@ -15,6 +15,8 @@ export default {
         "gray-1": "#333",
         "gray-2": "#4F4F4F",
         "gray-3": "#828282",
+        "gray-4": "#F2F2F2",
+        "gray-5": "#E0E0E0",
         "default": "#E0E0E0",
         "default-state": "#AEAEAE",
         "primary": "#3D5AFE",

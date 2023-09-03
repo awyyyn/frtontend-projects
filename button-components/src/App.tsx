@@ -1,6 +1,5 @@
-import { Aside } from "./components"
-import ButtonsPage from "./pages/ButtonsPage"
- 
+import { Aside } from "./components" 
+import { Outlet } from 'react-router-dom'
 
 export default function App() {
 
@@ -9,8 +8,8 @@ export default function App() {
     <>
       <div className="flex h-screen min-h-[600px]">
         <Aside />
-        <main className="md:ml-[237px] py-[53px]  px-[83px]">
-          <ButtonsPage />
+        <main className="md:ml-[237px] py-[30px] px-[83px]">
+          <Outlet />
         </main>
       </div>
     </>

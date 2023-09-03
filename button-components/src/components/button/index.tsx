@@ -15,14 +15,14 @@ const index = ({
     return(
         <button 
             disabled={disabled}  
-            className={`btn ${styles} ${disabled || disabledShadow ? 'shadow-none' : 'shadow-default'}`}
+            className={`btn ${styles} ${iconLeft || iconRight ? 'flex items-center gap-x-2' : ''} ${disabled || disabledShadow ? 'shadow-none' : 'shadow-default'}`}
         >
             {iconLeft &&
-                <span>{iconLeft}</span>
+                <img src={iconLeft} className='h-4 w-4' />
             }
             {value}
             {iconRight &&
-                <span>{iconRight}</span>
+                <img src={iconRight} className='h-4 w-4' />
             }
         </button>
     )

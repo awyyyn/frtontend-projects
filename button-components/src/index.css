@@ -15,7 +15,7 @@
         @apply text-[#9E9E9E] font-medium 
     }
     .active-link {
-        @apply text-[#090F31] font-normal
+        @apply text-[#090F31] font-semibold
     } 
     .brand {
         @apply font-poppins text-[13px] not-italic leading-normal font-semibold text-[#090F31]
@@ -33,7 +33,7 @@
         @apply space-y-[12px] min-w-max
     }  
     .row-container {
-        @apply grid grid-cols-1 sm:grid-cols-3 auto-rows-auto md:grid-cols-4 gap-y-[40px] auto-cols-min  gap-x-[155px]
+        @apply grid grid-cols-1 sm:grid-cols-3 auto-rows-auto md:grid-cols-4 gap-y-[40px] auto-cols-min  gap-x-[155px] my-[45px]
     }
     .disabled {
         @apply disabled:bg-default disabled:text-gray-3 disabled:shadow-none disabled:cursor-not-allowed disabled:outline-none
@@ -54,6 +54,36 @@
     .btn-lg { 
         @apply px-[22px] py-[11px]
     }
- 
+    .danger {
+        @apply text-white bg-danger btn-md
+    }
+    .secondary {
+        @apply bg-secondary text-white btn-md
+    }
+    .primary {
+        @apply text-white btn-md bg-primary
+    }
+    .input-container {
+        @apply flex flex-col gap-y-[16px]
+    }
+    .input-label {
+        @apply leading-normal text-[12px] font-japanese not-italic font-normal
+    }
+    .input {
+        @apply rounded-[8px] outline-none hover:border-gray-1 border border-gray-3 focus:border-primary   min-w-[200px] flex-shrink-0  text-[14px] font-japanese not-italic leading-normal placeholder:text-gray-3 text-gray-1 px-[18px] py-[12px]
+    }
+    .primary-input {
+
+    }
+    .disabled-input {
+        @apply border-gray-5 border-[1px]  bg-gray-4
+    }
+    .left-icon {
+        @apply absolute  left-[11.3px] top-[37px] h-[17.964px] w-[17.964px]
+    }
+    
+    .right-icon {
+        @apply absolute  right-[11.3px] top-[37px] h-[17.964px] w-[17.964px]
+    }
 }
 
