@@ -4,18 +4,18 @@ import AllTodos from './components/AllTodos';
 import ActiveTodos from './components/ActiveTodos';
 import CompleteTodos from './components/CompletedTodos';
 import { v4 as uuidv4 } from 'uuid';
+import todoData from '../todoData'  
+ 
  
 function App() { 
   const [adding, setAdding] = useState(false)
   const generateId: string = uuidv4();
   const [tab, setTab] = useState(0);
-  const [todos, setTodos] = useState<todo[]>([]); 
+  const [todos, setTodos] = useState<todo[]>(todoData); 
   const [todo, setTodo] = useState('');
 
-  async function getAllTodos() {
-    const res = await fetch("http://localhost:3000/todos")
-    const data: todo[] = await res.json()
-    setTodos(data) 
+  async function getAllTodos() {  
+    setTodos(todoData) 
   }
 
   useEffect(() => {
@@ -23,17 +23,7 @@ function App() {
   }, [])
  
   const handleTodo = useCallback(async(todo: todo) => {
-    await fetch(`http://localhost:3000/todos/${todo.id}`, {
-      method: 'PATCH',
-      headers: {                
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ 
-        completed: !todo.completed
-      }) 
-    });  
-
-    // setTodos()
+       
     setTodos(prev => (
       prev.flatMap(todoo => {
       if(todoo.id == todo.id ){
@@ -48,21 +38,11 @@ function App() {
     ))  
   }, []);
 
-  const handleDelete = async(id: number | string) => {
-    await fetch(`http://localhost:3000/todos/${id}`, {
-      method: 'DELETE',
-      headers: {                
-        'Content-Type': 'application/json',
-      }
-    }); 
+  const handleDelete = async(id: number | string) => { 
     setTodos(prev => (prev.filter(todoo => todoo.id != id))) 
   }
 
-  const handleDeleteAll = async(filteredTodos: todo[]) => { 
-    const allId = filteredTodos?.map(todo => todo.id); 
-    allId?.forEach(async id => {
-        await fetch(`http://localhost:3000/todos/${id}`, {method: "DELETE"})
-    });
+  const handleDeleteAll = async() => {  
     setTodos(prev => (prev.filter(todo => todo.completed == false))); 
   } 
  
@@ -96,20 +76,11 @@ function App() {
                   "completed": false
                 }
 
-                await fetch('http://localhost:3000/todos', {
-                  method: 'POST',
-                  headers: {                
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify(newTodo)
-                });
- 
-
                 setTodos(prev => ([newTodo, ...prev]))
                 setTodo("");
                 setAdding(false)
               }}
-              disabled={adding}
+              disabled={adding || !todo}
             >
               {adding ? "Adding" : "Add"}
             </button>
