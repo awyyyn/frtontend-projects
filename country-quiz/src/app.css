@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .bg__svg {
+        @apply w-[914px] h-[950px] flex-shrink -rotate-[65.136deg] bg-[#6066D0B2] rounded-[33px] fixed
+    }
+    .inactive__question {
+        @apply border-2 border-[#6066d0b3]
+    }
+    .option {
+        @apply w-full flex gap-x-[46px] px-[20px] py-[10px] items-center rounded-[12px] cursor-pointer duration-300 transition-all 
+    }
+    .next__button{
+        @apply text-white hidden float-right bg-[#F9A826] rounded-[12px] mt-[24px] text-[18px] not-italic leading-normal font-bold px-[36px] py-[15px]
+    }
+    .show {
+        @apply block
+    }
+    .incorrect {
+        @apply bg-[#EA8282] border-[#EA8282] text-white hover:bg-[#EA8282] hover:border-[#EA8282] 
+    }
+    .choice__letter {
+        @apply leading-normal font-medium text-[24px]
+    }
+    .option {
+        @apply leading-normal font-medium text-[18px] 
+    }
+    .correct {
+        @apply bg-[#60BF88] border-[#60BF88] text-white hover:bg-[#60BF88] hover:border-[#60BF88]
+    }
+
+    .default__text {
+        @apply group-hover:text-white text-[#6066d0b3];
+    }
+}
